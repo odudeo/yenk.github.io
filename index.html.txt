@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YENK Chat</title>
+  <script src="https://widget-js.cometchat.io/v3/cometchatwidget.js"></script>
+</head>
+<body>
+  <div id="cometchat"></div>
+
+  <script>
+    CometChatWidget.init({
+      appID: "2781489db185ce9b",
+      region: "us",
+      authKey: "1c61999c7f60f2a4e5e9f108bd8e307cfc47a2a4"
+    }).then(() => {
+      CometChatWidget.launch({
+        widgetID: "d55afaaf-77b8-4aec-b43e-5e976af46325",
+        target: "#cometchat",
+        roundedCorners: "true",
+        height: "600px",
+        width: "100%"
+      });
+    });
+  </script>
+</body>
+</html>
